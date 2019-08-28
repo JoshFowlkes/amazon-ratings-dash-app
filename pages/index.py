@@ -31,15 +31,21 @@ column1 = dbc.Col(
         
             ## Value Proposition
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+           
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            This is an app that uses Machine Learning to predict the rating of an Amazon Product Listing based on a variety of factors including: price, inventory, categories & sub categories, seller questions & answers, product information, product description etc. All the various factors that are easily viewable to any customer regardless if they are a prime member or not. 
+            
+            The purpose of this app is twofold:
+            
+            For Sellers: If your goal is to get a high product rating as well as to rank highly in seach results, this app will model what you should try to implement on your product to maximize its potential to rank high in an Amazon Search.
+            
+            For Customers: As you shop for any particular item, there might be multiple sellers of the exact same product. This predictive model will help you to compare and contract what an ideal seller's listing might look like, and help you sift through any potentially sketchy sellers.   
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            
 
             """
         ),
-        dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Predict', color='primary'), href='/predictions')
     ],
     md=4,
 )
@@ -50,7 +56,7 @@ fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src='assets/homepagechart.png', className='img-fluid'),
     ]
 )
 

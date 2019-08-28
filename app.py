@@ -54,10 +54,5 @@ meta_tags=[
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, meta_tags=meta_tags)
 app.config.suppress_callback_exceptions = True
-<<<<<<< HEAD
 app.title = 'Amazon Ratings Prediction App' # appears in browser title bar
 server = app.server
-=======
-app.title = 'Amazon Ratings Prediction' # appears in browser title bar
-server = app.server
->>>>>>> ac66e7c4ed153c8acd98ae95df0c7ce09d78e32d

@@ -10,13 +10,9 @@ dash = "*"
 dash-bootstrap-components = "*"
 gunicorn = "*"
 plotly = "*"
-jupyter = "*"
 pandas = "*"
 scikit-learn = "*"
-category-encoders = "*"
-xgboost = "*"
 dash-daq = "*"
-make-pipeline = "*"
 joblib = "*"
 
 [requires]
